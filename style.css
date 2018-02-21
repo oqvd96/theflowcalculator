@@ -1,0 +1,828 @@
+
+
+
+
+/*--------------General elements----------------- */
+
+
+
+body {
+	font-family: 'poppins',tahoma, arial;
+	color: #10181f;
+	text-align: center;
+}
+
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/gG8m82oGcrBJF727xHU04fY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/F4YWuALHubF63LLQPw0rMfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/HLBysyo0MQBO_7E-DWLwzg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v5/2fCJtbhSlhNNa6S2xlh9GyEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v5/UGh2YG8gx86rRGiAZYIbVyEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v5/yQWaOD4iNU5NTY0apN-qj_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v5/BAM-XigHGVWzifDv8-EC1SEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v5/9VWMTeb5jtXkNoTv949NpSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v5/zO07Oxe3SOlw0l2YX2sdIfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v5/Aul8cxPpbm96Ali7smyVfCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v5/aDjpMND83pDErGXlVEr-SSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v5/57TQ-anwthzkETEIO4jESPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+
+
+table {
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+table p {
+	margin: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+#inputcontent input {
+	border-color: #7ddbd3;
+	border-style: solid;
+	border-width: 2px;
+	background-color: white;
+	width: 150px;
+	height: 20px;
+	color: #10181f; 
+	display: inline;
+}
+
+
+div {
+	margin: auto;
+	display: inline;
+}
+
+a { text-decoration: none;}
+
+a:link { color: white;}
+a:visited {color: white;}
+a:hover { color: white;}
+a:active { color: white;}
+
+p {
+    margin: auto;
+    max-width: 400px;
+    text-align: left;
+}
+#logo {
+		max-width: 200px;
+			margin-top:  6px;
+}
+#icon {
+	display: none;
+
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #7ddbd3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom-style: solid ;
+  border-bottom-width: 2px;
+  border-bottom-color: #7ddbd3;
+  color: white;
+}
+
+
+#navbar img{
+	float: left;
+
+}
+
+#navbar ul li {
+	display: inline;
+}
+
+#navbar h1 {
+	margin-right: 230px;
+
+
+}
+
+#fullnameuser {
+	margin-top: -28px; margin-bottom:-2px; text-align: center; font-size: 12px;
+}
+
+
+
+
+/*--------------Login page----------------- */
+
+#loginpage table {
+	display: inline;
+	float: left;
+	margin: 20px;
+	margin-left: 200px;
+	text-align: center;
+}
+
+
+
+.logintable input {
+	width: 250px;
+	height: 33.3px;
+	font-size: 18px;
+	border-color: #7ddbd3;
+	color: #10181f;
+	margin: 5px;
+	padding-left: 10px;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.logintable input::placeholder {
+  color: #777779;
+}
+
+#loginbutton {
+	border-color: #2e7de1;
+	color: white;
+	background-color: #2e7de1;
+	padding: 7.5px 30px;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100px;
+	margin: auto;
+	margin-top: 10px;
+	margin-left: 5px;
+	cursor: pointer;
+
+}
+
+#registerbutton {
+	border-color: #2e7de1;
+	color: white;
+	background-color: #2e7de1;
+	padding: 7.5px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100px;
+	margin: auto;
+	margin-top: 10px;
+	margin-left: 5px;
+	cursor: pointer;
+
+}
+
+
+
+
+/*--------------Input content----------------- */
+
+
+
+#inputcontent {
+	margin-top: 120px;
+}
+
+.buttons input{
+	color: white;
+	background-color: #7ddbd3;
+	width: 50px;
+	margin: 20px;
+	margin-left: 0px;
+}
+
+#button {
+	border-color: #2e7de1;
+	color: white;
+	background-color: #2e7de1;
+	margin: 10px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100px;
+	margin: auto;
+	cursor: pointer;
+
+}
+
+#calcbutton {
+	border-color: #2e7de1;
+	color: white;
+	background-color: #2e7de1;
+	margin: 10px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100px;
+	margin: auto;
+	cursor: pointer;
+
+}
+
+.aplbutton {
+	border-color: #7ddbd3;
+	color: white;
+	background-color: #7ddbd3;
+	margin: 20px;
+	margin-left: 0px;
+	margin-bottom: 30px;
+	font-size: 12px;
+	border-radius: 5px;
+	padding: 6px;
+
+}
+
+.rstbutton {
+	border-color: #7ddbd3;
+	border-style: solid;
+	border-width: 2px;
+	color: #7ddbd3;
+	background-color: white;
+	margin: 20px;
+	margin-left: 0px;
+	margin-bottom: 30px;
+	font-size: 12px;
+	border-radius: 5px;
+	padding: 4.5px 8px;
+}
+
+.radiobuttons p {
+	display: inline;
+	margin: 0px;
+}
+
+.radiobuttons input {
+	width: 40px;
+}
+
+#moreinfo {
+	font-size: 6px;
+	background-color: #2e7de1;
+	color: white;
+	padding: 3px 6.5px;
+	border-radius: 60%;	
+	text-align: center;
+	
+}
+
+#CalculationName {
+	
+}
+
+
+
+
+/*--------------Calculation loader----------------- */
+
+
+
+	.loader {
+		padding-left: 0em;
+		padding-right: 0em;
+		margin: auto;
+		display: block;
+		width: 80px;
+	}
+
+	.cssload-loader {
+		margin: auto;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+	}
+
+	.cssload-loader {
+		width: 20px;
+		height: 20px;
+
+		border-radius: 50%;
+		margin: 1em;
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+	}
+	.cssload-loader,
+	.cssload-loader:before,
+	.cssload-loader:after {
+		animation: 1.3s infinite ease-in-out;
+			-o-animation: 1.3s infinite ease-in-out;
+			-ms-animation: 1.3s infinite ease-in-out;
+			-webkit-animation: 1.3s infinite ease-in-out;
+			-moz-animation: 1.3s infinite ease-in-out;
+	}
+	.cssload-loader:before,
+	.cssload-loader:after {
+		width: 100%; 
+		height: 100%;
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.cssload-loader:before,
+	.cssload-loader:after {
+			content: "";
+	}
+
+	.cssload-loader:before,
+	.cssload-loader:after {
+			content: "";
+			background-color: rgba(46,125,225,0.98);
+			transform: scale(0);
+			-o-transform: scale(0);
+			-ms-transform: scale(0);
+			-webkit-transform: scale(0);
+			-moz-transform: scale(0);
+			animation: cssload-animation 1.95s infinite ease-in-out;
+			-o-animation: cssload-animation 1.95s infinite ease-in-out;
+			-ms-animation: cssload-animation 1.95s infinite ease-in-out;
+			-webkit-animation: cssload-animation 1.95s infinite ease-in-out;
+			-moz-animation: cssload-animation 1.95s infinite ease-in-out;
+	}
+	.cssload-loader:after { animation-delay: 0.98s;
+			-o-animation-delay: 0.98s;
+			-ms-animation-delay: 0.98s;
+			-webkit-animation-delay: 0.98s;
+			-moz-animation-delay: 0.98s; }
+
+
+
+	@keyframes cssload-animation {
+		0%	 { transform: translateX(-100%) scale(0); }
+		50%	{ transform: translateX(0%)		scale(1); }
+		100% { transform: translateX(100%)	scale(0); }
+	}
+
+	@-o-keyframes cssload-animation {
+		0%	 { -o-transform: translateX(-100%) scale(0); }
+		50%	{ -o-transform: translateX(0%)		scale(1); }
+		100% { -o-transform: translateX(100%)	scale(0); }
+	}
+
+	@-ms-keyframes cssload-animation {
+		0%	 { -ms-transform: translateX(-100%) scale(0); }
+		50%	{ -ms-transform: translateX(0%)		scale(1); }
+		100% { -ms-transform: translateX(100%)	scale(0); }
+	}
+
+	@-webkit-keyframes cssload-animation {
+		0%	 { -webkit-transform: translateX(-100%) scale(0); }
+		50%	{ -webkit-transform: translateX(0%)		scale(1); }
+		100% { -webkit-transform: translateX(100%)	scale(0); }
+	}
+
+	@-moz-keyframes cssload-animation {
+		0%	 { -moz-transform: translateX(-100%) scale(0); }
+		50%	{ -moz-transform: translateX(0%)		scale(1); }
+		100% { -moz-transform: translateX(100%)	scale(0); }
+	}
+
+
+
+
+/*--------------Output content----------------- */
+
+
+
+#scbutton {
+	border-color: #2e7de1;
+	color: white;
+	background-color: #2e7de1;
+	margin: 20px;
+	float: right;
+	margin-right: 20px;
+	margin-top: -70px;
+	padding: 10px 22.5px;
+	border-radius: 5px;
+	font-size: 14px;
+	display: none;
+}
+
+#outputcontent {
+	margin-top: 20px;
+}
+
+#outputtable tr td p {
+	display: inline;
+}
+
+
+#AddCbutton {
+	border-color: #2e7de1;
+	color: white;
+	background-color: #2e7de1;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#CPtext {
+	width: 300px;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+/*--------------Saved Calculations----------------- */
+
+
+
+.calculationxbutton{
+	border-color: #2e7de1;
+	color: white;
+	background-color: #2e7de1;
+	margin-top: 40px;
+	margin: 20px;
+	margin-bottom: 50px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#mailbutton{
+	border-color: #2e7de1;
+	color: white;
+	background-color: #2e7de1;
+
+	margin: auto;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 170px;
+}
+
+#calculationlist {
+	margin: auto;
+	margin-top: 50px;
+
+}
+
+#calculationlist li {
+	display: inline-block;
+}
+
+#calculationdetails1 p {
+	margin: 5px;
+}
+
+#calculationlist table {
+	 margin: 50px;
+	 margin-top: 25px;
+	 margin-bottom: 10px;
+}
+
+#calculationdetails1 {
+	text-align: center;
+	display:  block;
+}
+
+.totaldiv p {
+	font-size: 14px;
+	padding: 0px;
+}
+
+#remove {
+	background-color: #dad8d6;
+	color: white;
+	padding: 9px 16px;
+	border-radius: 50%;
+}
+
+#remove:hover {
+	cursor: pointer;
+	padding: 8px 15.125px;
+}
+
+
+
+/*--------------Other----------------- */
+
+
+
+#modalContainer {
+	background-color:rgba(0, 0, 0, 0.3);
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:10000;
+
+}
+
+#alertBox {
+	position:relative;
+	width:500px;
+	margin-top:200px;
+	border:0.5px solid #7ddbd3;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position:20px 30px;
+}
+
+#modalContainer > #alertBox {
+	height: 180px;
+}
+
+#alertBox p {
+	margin-top: 15px;
+	margin-bottom: 35px;
+	padding-left:5px;
+	text-align: center;
+}
+
+#alertBox input {
+	width: 300px;
+	margin-bottom: 35px;
+}
+
+#alertBox a {
+	display: inline;
+	margin: 15px;
+	margin-top: 30px;
+	padding: 10px 22.5px;
+}
+
+#alertBox #closeBtn {
+	display:block;
+	position:relative;
+	margin:15px auto;
+	padding:5px;
+	border:0 none;
+	width:70px;
+	font:0.7em;
+	text-transform:uppercase;
+	text-align:center;
+	color:#FFF;
+	background-color:#2e7de1;
+	border-radius: 3px;
+	text-decoration:none;
+}
+
+#sendBtn {
+	display:block;
+	position:relative;
+	margin:15px auto;
+	padding:5px;
+	border:0 none;
+	width: 150px;
+	font:0.7em;
+	text-transform:uppercase;
+	text-align:center;
+	color:#FFF;
+	background-color:#2e7de1;
+	border-radius: 3px;
+	text-decoration:none;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+#navbar #logo {
+    display: none;
+  }
+#icon {
+	display: block;
+	max-width: 40px;
+}
+#navbar h1 {
+	margin: auto;
+	margin-right: 80px;
+	font-size: 25px;
+}
+.radiobuttons {
+	width: 200px;
+    display: block;
+}
+}
+@media only screen and (max-width: 450px) {
+#icon {
+	display: block;
+	max-width: 40px;
+	margin-top:  -5px;
+	margin-left: 10px;
+}
+#navbar h1 {
+	font-size: 20px;
+	width: 280px;
+	margin-left: 10px;
+}
+
+#navbar ul {
+	padding-left:  5px;
+}
+h3 {
+	text-align: left;
+	margin: 10px;
+}
+
+table {
+	margin-left: 0px;
+}
+
+input {
+	width: 120px;
+}
+
+#moreinfo {
+	display: none;
+}
+
+
+#CalculationName {
+	width: 150px;
+}
+
+#scbutton {
+	font-size: 0px;
+	margin-top: -29px;
+	padding: 13px 20px;
+
+}
+
+#button {
+	float: left;
+	margin-left: 10px;
+	width: 200px;
+}
+
+#AddCbutton {
+	float: left;
+	margin-left: 10px;
+	width: 200px;
+}
+
+#inputcontent {
+    margin-top: 100px;
+}
+
+.aplbutton {}
+
+.radiobuttons {
+	width: 50%;
+    float: left;
+    display: block;
+}
+
+#resultexpl {
+	margin-left: 10px;
+}
+
+#resultexpl {
+	margin-left: 10px;
+}
+
+#outputtable {
+	margin-left: 0px;
+}
+
+#CPtext {
+	margin-left: 10px;
+}
+
+.calculationbuttons {
+	margin-left: 10px;
+}
+
+.calculationxbutton {
+	margin-left: 10px;
+	display: block;
+	margin-bottom: 10px;
+
+}
+
+#alertBox {
+	width: 300px;
+	height: 230px;
+}
+
+#alertBox h3 {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#alertBox input {
+	margin: auto;
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+#mailbutton {
+	float: left;
+	margin-left: 10px;
+	width: 200px;
+}
+
+#sendBtn {
+	margin-bottom: 20px;
+}
+
+.apl-btns {
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+}
+
